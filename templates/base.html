@@ -104,7 +104,7 @@
           {% endfor %}
 
           {% for name, link in LINKS %}
-          <li><a href="{{ link }}" target="_blank">{{ name }}</a></li>
+          <li><a href="{{ link }}">{{ name }}</a></li>
           {% endfor %}
         </ul>
       </nav>
@@ -112,7 +112,7 @@
 
       <ul class="social">
         {% for name, link in SOCIAL %}
-        <li><a class="sc-{{ name }}" href="{{ link }}" target="_blank"><i class="fa fa-{{ name }}"></i></a></li>
+        <li><a class="sc-{{ name }}" href="{{ link }}"><i class="fa fa-{{ name }}"></i></a></li>
         {% endfor %}
       </ul>
     </div>
