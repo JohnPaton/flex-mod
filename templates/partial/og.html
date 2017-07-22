@@ -10,7 +10,7 @@
 <meta property="og:locale" content="{{ default_locale }}"/>
 <meta property="og:url" content="{{ SITEURL }}"/>
 {% if SITE_PREVIEW_IMAGE %}
-<meta property="og:image" content="{{ SITE_PREVIEW_IMAGE }}">
+<meta property="og:image" content="{{ SITEURL }}/{{ SITE_PREVIEW_IMAGE }}">
 {% elif SITELOGO %}
-<meta property="og:image" content="{{ SITELOGO }}">
+<meta property="og:image" content="{{ SITEURL }}/{{ SITELOGO }}">
 {% endif %}
