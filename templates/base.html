@@ -74,9 +74,10 @@
       enable_page_level_ads: true
     });
   </script>
+  <script src="/theme/htmx.min.js"></script>
   {% endif %}
 </head>
-<body>
+<body hx-boost="true">>
   {% if GOOGLE_TAG_MANAGER %}
     {% include "partial/gtm.html" %}
   {% endif %}
