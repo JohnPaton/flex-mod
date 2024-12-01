@@ -75,9 +75,10 @@
     });
   </script>
   <script src="/theme/htmx.min.js"></script>
+  <script src="/theme/htmx-preload.js"></script>
   {% endif %}
 </head>
-<body hx-boost="true">>
+<body hx-boost="true" hx-ext="preload" preload="mousedown" preload-images="true">
   {% if GOOGLE_TAG_MANAGER %}
     {% include "partial/gtm.html" %}
   {% endif %}
